@@ -1,5 +1,7 @@
 {
-  "name": "Copy of مركز الكنز للأقمشة - Treasure Fabric Center",
+  "name": "مركز الكنز للأقمشة - Treasure Fabric Center",
   "description": "وجهتك الأولى لاكتشاف أجود وأندر أنواع الأقمشة العالمية بلمسة عصرية وذكية.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "camera"
+  ]
 }

@@ -23,46 +23,23 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-      /* Prevent text selection to feel like a native app */
       .user-select-none {
         user-select: none;
         -webkit-user-select: none;
-      }
-      /* SHINE EFFECT FOR BUTTONS */
-      .btn-shine {
-        position: relative;
-        overflow: hidden;
-      }
-      .btn-shine::after {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: linear-gradient(
-          to bottom right,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 0.1) 50%,
-          rgba(255, 255, 255, 0) 100%
-        );
-        transform: rotate(45deg);
-        transition: all 0.5s;
-        opacity: 0;
-      }
-      .btn-shine:hover::after {
-        opacity: 1;
-        left: 0;
-        top: 0;
       }
     </style>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js",
+    "firebase/storage": "https://www.gstatic.com/firebasejs/10.7.0/firebase-storage.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
